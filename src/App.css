@@ -1,0 +1,135 @@
+.card{
+  width: 150px;
+  height: 220px;
+  background-color: white;
+  border-radius: 22px;
+  position: relative;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.turned--card{
+  width: 150px;
+  height: 220px;
+  border-radius: 22px;
+  background-image: url("./images/turned--card.jpg");
+  background-position: center;
+  background-size: cover;
+  background-size: 105%;
+}
+
+.number--top {
+  position: absolute;
+  font-family: "Play", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 35px;
+  margin-top: 0px;
+  top: 5%;
+  left: 5%;
+}
+
+.number--bottom {
+  position: absolute;
+  font-family: "Play", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 35px;
+  bottom: 5%;
+  right: 5%;
+  margin: 0px;
+
+}
+
+.pip {
+  position: absolute;
+  top: 15%;
+  left: 37%;
+  font-size: 50px;
+}
+
+.myCards {
+  display: flex;
+  justify-content: center;
+}
+
+.dealer--cards{
+  display: flex;
+}
+
+.hand--container{
+  text-align: center;
+  width: 100%;
+  bottom: 5%;
+}
+
+.your--hand{
+  font-size: 30px;
+  color: white;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.board {
+  display: flex;
+  width: 100%;
+  height: 259px;
+  border-radius: 25px;
+  justify-content: center;
+  align-items: center;
+}
+
+.game{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.button{
+  background-color: white;
+  height: 100px;
+  width: 150px;
+  border-radius: 10px;
+  margin: 0 5px;
+  font-size: 20px;
+  font-family: "Play", sans-serif;
+  font-weight: 700;
+}
+
+.button:disabled{
+  cursor: not-allowed;
+}
+
+.overlay {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.7);
+  height: 100%;
+  width: 100%;
+  z-index: 10;
+}
+
+.game{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100vh;
+}
+
+.lose--screen {
+  height: 300px;
+  width: 400px;
+  background-color: rgb(5, 87, 31);
+  color: white;
+  position: absolute;
+  z-index: 12;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.button:hover{
+  background-color: rgba(255, 255, 255, 0.654);
+}
